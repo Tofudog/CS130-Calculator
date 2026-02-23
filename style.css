@@ -1,0 +1,80 @@
+html, body{
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+  background-image: linear-gradient(to bottom, rgb(0, 0, 20), rgb(1, 1, 95));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.calculator {
+  background-image: linear-gradient(to right, rgb(89, 89, 119), rgb(118, 118, 165));
+  height: 400px;
+  width: 300px;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.display {
+  background-color: white;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 24px;
+  user-select: none;
+}
+
+.btn-area {
+  flex: 1;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+}
+
+button {
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 18px;
+}
+
+button:hover {
+  filter: brightness(1.1);
+  scale: 1.05;
+}
+
+button:active {
+  filter: brightness(0.9);
+  scale: 0.95;
+}
+
+.func-btn {
+  background-color: #d0d8f6;
+}
+
+.num-btn {
+  background-color: #202020;
+  color: white;
+}
+
+.operator-btn {
+  background-color: #ff9500;
+  color: white;
+}
